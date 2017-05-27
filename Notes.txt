@@ -1,0 +1,22 @@
+Home Carosal
+3470 x 1564
+
+What We do Section:
+3118 x 1564
+
+Blog and Post header image:
+2806 x 500
+
+Color Scheme:
+red 460000/ Grey 222222 /  Sand DBC1AD / White
+
+Blog Fields:
+Title
+Author
+Date
+Labels
+Content
+
+SuperUser:
+Ketoadmin
+Hillsdal12e
