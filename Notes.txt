@@ -8,7 +8,7 @@ Blog and Post header image:
 2806 x 500
 
 Color Scheme:
-red 460000/ Grey 222222 /  Sand DBC1AD / White
+red 460000/ Grey 222222 /  Sand DBC1AD / White / Blue 337AB7
 
 Blog Fields:
 Title
@@ -20,3 +20,13 @@ Content
 SuperUser:
 Ketoadmin
 Hillsdal12e
+
+Server Stuff:
+root
+Hillsdal12e
+
+django
+Hillsdal12e
+
+Virtual Env:
+venv
