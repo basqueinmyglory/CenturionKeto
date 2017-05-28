@@ -13,3 +13,6 @@ def blog(request):
 def post(request, blog_id):
     blogpost = get_object_or_404(Blogpost, pk=blog_id)
     return render(request, 'blog/post.html', {'blogpost': blogpost})
+
+def profile(request):
+    return render(request, 'blog/profile.html')

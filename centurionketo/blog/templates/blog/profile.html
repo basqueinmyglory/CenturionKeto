@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <title>Centurion Keto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Playball">
+  <style>
+    body {
+    background-color: #222222 ;
+    color: #DBC1AD  ;
+    }
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    p {
+      color: white;
+      font-size: 1.3em;
+      line-height: 1.5em;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" style="font-family: 'Playball', cursive; color: #DBC1AD  ;" href="{% url 'home' %}">Centurion Keto</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'profile' %}">Profile</a></li>
+        <li><a href="{% url 'blog' %}">Blog</a></li>
+        <!--<li><a href="#">Contact</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="item active">
+        <img src="{% static '/pics/ketobasque1v1.jpg' %}" alt="" style="width:100%;" class="img-responsive">
+           <div class="carousel-caption" style="font-family: 'Playball', cursive; color: #460000  ;">
+           <h1 class="display-2">Profile</h1>
+           </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="col-sm-offset-1">
+    <img src="{% static '/pics/profile/bull.jpg' %}" alt="" style="width:250px;" class="col-sm-2 img-circle img-responsive">
+    <h1 class="col-sm-9" style="font-family: 'Playball', cursive; color: #DBC1AD; margin-top: 0;">Keto Basque</h1>
+    <p class="col-sm-9">Height: 6'0'' | Age: 26 | Location: Austin, Texas</p>
+    <p class="col-sm-9">Routine: Bodyweight & Kettlebells | Diet: Ketogenic</p>
+    <p class="col-sm-9"><a  href="#">MyFitnessPal</a> | <a href="#">Instagram</a></p>
+
+</div>
+    <hr class="col-sm-offset-1 col-sm-10">
+<div class="col-sm-offset-1" style=" ">
+    <h2 class="col-sm-11 text-center">About</h2>
+    <div style="font-size: .8em; margin-bottom: 100px;">
+        <p class="col-sm-11" style="padding-bottom: 12px; text-indent: 50px;">   I am a 26 year old male living in Austin, Texas. I first came to find out about ketogenic diets when I was 284lbs and decided I wanted to lose weight. I then went on a ketogenic diet and lost over 80lbs. this was in my early twenties. Since then my weight and dedication to a keto diet have fluctuated. But I have renewed my desire to live keto and to try and get into the best shape possible.</p>
+        <p class="col-sm-11" style="padding-bottom: 12px; text-indent: 50px;">Along with my ketogenic diet I plan to exercise mostly using body weight exercises and kettlebells. Ideally I would be doing a Strong Lifts style strength training program. However, being obese the first 22 years of my life has really done a number on my knees. And squatting anything more than ~200lbs causes me a lot of knee pain. I’ve seen a doctor about it and his answer was, “Don’t do it if it hurts.” So I’m not doing heavy lower body lifts. It’s kind of a bummer, but we have to play the cards we’re dealt. So while a Strong Lifts style program is probably the ideal, It’s still possible to get in good shape on other programs. I just won’t get there as quickly. This leads me into my a point I want to make.</p>
+        <p class="col-sm-11" style="padding-bottom: 12px; text-indent: 50px;">When losing weight there is a mantra you often hear, “The best diet is the one you stick with.” There is a lot of debate as to which diet is “best,” or which is “fastest,” or which is “healthiest.” Personally, all this debate leads to analysis paralysis. People get too obsessed with finding/researching a diet or exercise program that is “perfect” that they never actually start one. And starting one is far more important than searching for one. It’s better to be a healthy naive vegan, than an overweight fitness nerd. </p>
+        <p class="col-sm-11" style="padding-bottom: 12px; text-indent: 50px;">I am applying this thinking to my fitness routine. I have experience dieting, but not a lot of experience with exercise. Instead of spending all my of time finding the perfect exercise routine, I decided on body weight and kettlebells. Why? Because Kettlebells are fun! Kettlebell workouts in my backyard will always be more fun than going to the gym. Where all I see are bodybuilder types take selfies with their butter-face girlfriends. Whereas throwing around a cannonball with handles is awesome every time. Because they’re awesome every time, I’ll keep doing them. And sticking to a program that is 80% effective is infinitely better than quitting a program that is 100% effective. </p>
+        <p class="col-sm-11" style="padding-bottom: 12px; text-indent: 50px;">This is a journey. A lot if not most fitness blogs are run by people who are already in great shape. I am not. With regards to dieting and nutrition, I am well versed. With regards to fitness and exercising, I am a novice. But that’s the journey. And that’s the point of my posts. I’ve gone from morbidly obese to somewhat average. And now I want to go from somewhat average to fit.</p>
+        <p class="col-sm-11" style="padding-bottom: 12px; text-indent: 50px;">I learned while losing weight is that dieting is a mental game. It’s a frame of mind and a lifestyle choice. Hence why there is a “Creed” section to this blog. I am not trying to get fit I am trying to change my lifestyle. Because of that, I will be blogging about more than just my workouts. I will be sharing thoughts on what I think works and what doesn’t work. But I will also discuss things in my life. Stress can derail the best of intentions. I also like the idea of classical manhood and warriors. That’s why this blog is named CenturionKeto. It’s about being a healthy fit warrior and man in today’s world.</p>
+    </div>
+</div>
+</body>
+
+</html>

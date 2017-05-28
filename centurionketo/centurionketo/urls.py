@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^$', blog.views.home, name = "home"),
     url(r'^blog/', blog.views.blog, name = "blog"),
     url(r'^post/(?P<blog_id>[0-9]+)/$', blog.views.post, name="post"),
+    url(r'^profile/', blog.views.profile, name = "profile"),
 
 ]
